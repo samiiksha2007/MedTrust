@@ -3,11 +3,11 @@ import Section from './Section';
 
 const Team = () => {
     const teamMembers = [
-        "Zakwan Haaziq K",
-        "Samiiksha C",
-        "Pooja Sri M",
-        "Rakshitha B",
-        "Thulasi S"
+        { name: "Samiiksha C", role: "Team Leader" },
+        { name: "Zakwan Haaziq K", role: "Team Member" },
+        { name: "Pooja Sri M", role: "Team Member" },
+        { name: "Rakshitha B", role: "Team Member" },
+        { name: "Thulasi S", role: "Team Member" }
     ];
 
     return (
@@ -19,14 +19,14 @@ const Team = () => {
             </div>
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 flex-wrap lg:flex-nowrap">
-                {teamMembers.map((name, idx) => (
+                {teamMembers.map((member, idx) => (
                     <div key={idx} className="bg-white dark:bg-dark-card p-6 rounded-xl border border-gray-100 dark:border-gray-800 text-center shadow-sm hover:shadow-md transition-shadow w-full md:w-auto flex-1 min-w-[180px]">
                         {/* Placeholder Avatar */}
                         <div className="w-20 h-20 bg-gray-100 dark:bg-gray-800 rounded-full mx-auto mb-4 overflow-hidden flex items-center justify-center">
-                            <span className="text-2xl font-bold text-gray-400 dark:text-gray-600">{name.charAt(0)}</span>
+                            <span className="text-2xl font-bold text-gray-400 dark:text-gray-600">{member.name.charAt(0)}</span>
                         </div>
-                        <h3 className="font-bold text-lg mb-1 dark:text-white">{name}</h3>
-                        <p className="text-sm text-primary dark:text-blue-400 font-medium mb-3">Team Member</p>
+                        <h3 className="font-bold text-lg mb-1 dark:text-white">{member.name}</h3>
+                        <p className="text-sm text-primary dark:text-blue-400 font-medium mb-3">{member.role}</p>
                     </div>
                 ))}
             </div>
