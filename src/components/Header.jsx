@@ -60,7 +60,7 @@ const Header = () => {
                     </button>
 
                     <a
-                        href="https://samiiksha2007.github.io/MedTrust-dashboard/"
+                        href="https://samiiksha2007.github.io/MedTrust-dashboard/#/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-primary dark:bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-primary-dark dark:hover:bg-blue-700 transition-colors"
@@ -102,7 +102,7 @@ const Header = () => {
                             </Link>
                         ))}
                         <a
-                            href="https://samiiksha2007.github.io/MedTrust-dashboard/"
+                            href="https://samiiksha2007.github.io/MedTrust-dashboard/#/login"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-primary dark:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-primary-dark transition-colors"

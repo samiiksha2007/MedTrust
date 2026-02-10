@@ -42,7 +42,7 @@ const Hero = () => {
                     className="flex flex-col sm:flex-row gap-4"
                 >
                     <a
-                        href="https://samiiksha2007.github.io/MedTrust-dashboard/"
+                        href="https://samiiksha2007.github.io/MedTrust-dashboard/#/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 bg-primary dark:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-dark dark:hover:bg-blue-700 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
