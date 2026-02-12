@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Stethoscope, Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
+
+const MedTrustIcon = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+        <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+        <circle cx="20" cy="10" r="2" />
+    </svg>
+);
+
 import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
@@ -33,7 +42,7 @@ const Header = () => {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
                 <div className="flex items-center gap-2 font-bold text-2xl text-primary dark:text-blue-400">
-                    <Stethoscope className="w-8 h-8" />
+                    <MedTrustIcon className="w-8 h-8" />
                     <span>MedTrust</span>
                 </div>
 

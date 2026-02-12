@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './Section';
-import { HeartPulse, Brain, Activity, Lock, Layout, Microscope } from 'lucide-react';
+import { HeartPulse, Brain, Activity, Lock, Layout, Microscope, Zap } from 'lucide-react';
 
 const Features = () => {
     const features = [
@@ -15,7 +15,7 @@ const Features = () => {
             desc: "Early detection of cardiovascular risks using advanced ML algorithms."
         },
         {
-            icon: <Brain className="w-8 h-8 text-purple-500" />,
+            icon: <Zap className="w-8 h-8 text-green-500" />,
             title: "Diabetes Prediction",
             desc: "Risk assessment for diabetes based on glucose levels and other factors."
         },
